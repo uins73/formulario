@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Veterinario</title>
+    <link rel="stylesheet" href="css/stilo.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>
+            <img class="logo" src="media/logo.png" alt="">
+            Resgistro de Mascota
+        </h2>
+<form>
+        <div class="form-group">
+            <label for="patient_name">Nombre de la Mascota</label>
+            <input type="text" id="patient_name" name="patient_name" placeholder="Beto" required autofocus>
+        </div>
+
+        <div class="form-group">
+            <label for="mascota">Tipo de mascota</label>
+            <select id="mascota" name="mascota" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="pajaro">Pájaro</option>
+                <option value="pez">Pez</option>
+                <option value="reptil">Reptil</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="example2">Raza</label>
+            <input type="text" id="example2" name="example2" placeholder="Salchicha" required>
+        </div>
+
+        <div class="form-group">
+            <label for="edad">Edad(años)</label>
+            <input type="number" id="edad" name="breed" min="0" max="25" required>
+        </div>
+
+        <div class="form-group">
+            <label>Género:</label>
+            <div class="radio-group">
+                <input type="radio" id="macho" name="genero" value="macho" required>
+                <label for="macho">Macho</label>
+                <input type="radio" id="hembra" name="genero" value="hembra" required>
+                <label for="hembra">Hembra</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones" name="observaciones" placeholder="Motivo de la visita"></textarea>
+        </div>
+        <button type="submit" class="register-button">Registrar</button>
+    </div></form>
+</body>
+</html>
